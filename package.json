@@ -1,0 +1,22 @@
+{
+  "name": "woojikengine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web-based 2D Game Engine",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "docs:api": "typedoc"
+  },
+  "devDependencies": {
+    "pnpm": "^8.0.0",
+    "typescript": "^5.0.0",
+    "typedoc": "^0.25.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@8.0.0"
+}
