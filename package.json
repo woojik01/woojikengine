@@ -1,22 +1,24 @@
 {
   "name": "woojikengine",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Web-based 2D Game Engine",
+  "version": "1.0.0",
+  "description": "웹 기반 2D/3D 게임 엔진 (2D 주력, 3D 보조 지원)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "pnpm -r dev",
-    "build": "pnpm -r build",
-    "test": "pnpm -r test",
-    "lint": "pnpm -r lint",
-    "docs:api": "typedoc"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:e2e": "playwright test"
   },
+  "keywords": ["game-engine", "2d", "3d", "webgl", "canvas", "typescript"],
+  "author": "woojik",
+  "license": "MIT",
   "devDependencies": {
-    "pnpm": "^8.0.0",
     "typescript": "^5.0.0",
-    "typedoc": "^0.25.0"
+    "vitest": "^1.0.0",
+    "playwright": "^1.40.0"
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "packageManager": "pnpm@8.0.0"
+  }
 }
